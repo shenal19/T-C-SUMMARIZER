@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AgreeWise – T&C Summarizer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>📄 AgreeWise – T&C Summarizer</h1>
+
+  <form method="POST" enctype="multipart/form-data">
+    <textarea name="tnc_text" placeholder="Paste Terms & Conditions here..." rows="10" cols="80"></textarea><br><br>
+    OR Upload PDF: <input type="file" name="tnc_file"><br><br>
+    <button type="submit">Summarize</button>
+  </form>
+
+  {% if result %}
+    <h2>📝 Summary:</h2>
+    {% for tag, items in result.items() %}
+      {% if items %}
+        <h3>{{ tag }}</h3>
+        <ul>
+          {% for item in items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</body>
+</html>

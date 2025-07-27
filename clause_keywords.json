@@ -1,0 +1,6 @@
+{
+  "Privacy": ["privacy", "data", "collection", "personal information"],
+  "Payments": ["payment", "billing", "subscription", "fee", "charge"],
+  "Refund & Cancellation": ["refund", "return", "cancellation", "terminate"],
+  "Legal": ["jurisdiction", "governing law", "liability", "indemnify"]
+}
