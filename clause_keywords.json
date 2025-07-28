@@ -1,6 +1,9 @@
+
 {
-  "Privacy": ["privacy", "data", "collection", "personal information"],
-  "Payments": ["payment", "billing", "subscription", "fee", "charge"],
-  "Refund & Cancellation": ["refund", "return", "cancellation", "terminate"],
-  "Legal": ["jurisdiction", "governing law", "liability", "indemnify"]
+  "privacy": ["personal data", "data collection", "privacy policy"],
+  "refund": ["refund", "money back", "return policy"],
+  "cancellation": ["cancel", "termination", "cancelled", "cancellation"],
+  "data usage": ["data sharing", "third party", "data usage", "analytics"],
+  "liability": ["liable", "liability", "responsibility", "not responsible"],
+  "governing law": ["jurisdiction", "governing law", "court", "legal"]
 }
